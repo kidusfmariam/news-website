@@ -21,6 +21,7 @@ const Navbar  = () => {
         <p>Politics</p>
         <p>Business</p>
         <p>Sports</p>
+        <p>About</p>
         </div>
     </nav>
     <div className={`fixed sm:w-[30%] w-[60%] h-full bg-white z-[1000] flex items-center justify-start px-3 py-8 ${nav ? 'translate-x-0' : 'translate-x-[-100%]'}`}>
