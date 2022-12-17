@@ -21,7 +21,7 @@ const Home = () => {
 
   useEffect(() => {
     const getLatest = async() => {
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?apiKey=${key}&category=sports&country=us`)
+        const response = await axios.get(`https://newsapi.org/v2/top-headlines?apiKey=${key}&category=sports&language=en`)
         console.log(response.data.articles)
         setSports(response.data.articles)
     }

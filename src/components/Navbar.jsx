@@ -16,23 +16,24 @@ const Navbar  = () => {
         </div>
         <hr className='w-[100%] mx-auto' />
         <div className='w-full pt-5 font-thin px-8 flex justify-center gap-7 sm:text-[20px] sm:gap-9 text-sm items-center'>
-        <p>Home</p>
-        <p>News</p>
-        <p>Politics</p>
-        <p>Business</p>
-        <p>Sports</p>
-        <p>About</p>
+        <Link to='/'><p>Home</p> </Link>
+        <Link to='/news'><p>News</p></Link>
+        <Link to='/news'><p>Politics</p></Link>
+        <Link to='/news'><p>Business</p></Link>
+        <Link to='/news'><p>Sports</p></Link>
+        <Link to='/news'><p>About</p></Link>
+       
         </div>
     </nav>
     <div className={`fixed sm:w-[30%] w-[60%] h-full bg-white z-[1000] flex items-center justify-start px-3 py-8 ${nav ? 'translate-x-0' : 'translate-x-[-100%]'}`}>
     <p className='absolute right-5 top-5 cursor-pointer' onClick={() => setNav(!nav)}><AiOutlineClose size={30}/></p>
         <ul className='flex flex-col gap-5 relative'>
-            <p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>Home</p>
-            <p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>News</p>
-            <p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>Business</p>
-            <p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>Politics</p>
-            <p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>Sports</p>
-            <p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>About</p>
+           <Link to="/"><p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>Home</p></Link>
+            <Link to="/news"><p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>News</p></Link> 
+            <Link to="/business"><p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>Business</p></Link> 
+            <Link to="/politics"><p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>Politics</p></Link> 
+            <Link to="/sports"><p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>Sports</p></Link> 
+            <Link to="/about"><p className='uppercase sm:text-[35px] text-[28px] font-light cursor-pointer hover:text-[#fc444a] hover:tracking-[0.2em]'>About</p></Link> 
         </ul>
       <div className='absolute bottom-8 left-5 flex gap-7 justify-center items-center'>
         <BsTwitter  className=' cursor-pointer hover:text-[#fc444a] text-[20px] sm:text-[30px] hover:scale-[120%]' />
