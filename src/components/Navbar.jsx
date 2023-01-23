@@ -18,7 +18,7 @@ const Navbar  = () => {
         <div className='w-full pt-5 font-thin px-8 flex justify-center gap-7 sm:text-[20px] sm:gap-9 text-sm items-center'>
         <Link to='/'><p>Home</p> </Link>
         <Link to='/news'><p>News</p></Link>
-        <Link to='/news'><p>Politics</p></Link>
+        <Link to='/tech'><p>Technology</p></Link>
         <Link to='/news'><p>Business</p></Link>
         <Link to='/news'><p>Sports</p></Link>
         <Link to='/news'><p>About</p></Link>

@@ -11,7 +11,7 @@ const Home = () => {
   
   useEffect(() => {
   const getLatest = async() => {
-      const response = await axios.get(`https://newsapi.org/v2/top-headlines?apiKey=${key}&category=business&language=en`)
+      const response = await axios.get(requests.business)
       console.log(response.data.articles)
       setNews(response.data.articles)
   }
@@ -21,7 +21,7 @@ const Home = () => {
 
   useEffect(() => {
     const getLatest = async() => {
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?apiKey=${key}&category=sports&language=en`)
+        const response = await axios.get(requests.sports)
         console.log(response.data.articles)
         setSports(response.data.articles)
     }
@@ -31,7 +31,7 @@ const Home = () => {
   
     useEffect(() => {
       const getLatest = async() => {
-          const response = await axios.get(`https://newsapi.org/v2/top-headlines?apiKey=${key}&category=technology&language=en`)
+          const response = await axios.get(requests.tech)
           console.log(response.data.articles)
           setTech(response.data.articles)
       }

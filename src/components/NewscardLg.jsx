@@ -2,7 +2,7 @@ import React from 'react'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 const NewscardLg = ({title, image, description, author, link}) => {
   return (
-    <div className='md:w-[900px] w-[400px] h-[400px] sm:h-[250px] flex flex-col sm:flex-row gap-2 items-center justify-center border border-slate-900 shadow-white shadow-sm my-4 sm:p-3 py-3 rounded-xl'>
+    <div className='md:w-[900px] w-[400px] h-[400px] sm:h-[250px] flex flex-col sm:flex-row gap-2 items-center justify-center border border-slate-900 my-4 sm:p-3 py-3 rounded-sm'>
             <img src={image} alt="title" className='sm:w-[200px] w-full h-[170px] my-1  sm:h-[200px] object-cover'/>
       
         <div className='px-3'>

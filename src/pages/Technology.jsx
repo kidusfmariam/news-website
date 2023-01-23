@@ -2,16 +2,13 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import requests from '../requests';
-import NewsCardSm from '../components/NewsCardSm';
 import NewsCardMd from '../components/NewsCardMd';
-import Headline from '../components/Headline';
-const News = () => {
-
+const Technology = () => {
   const [data, setData] = useState([]);
   
   useEffect(() => {
     const getLatest = async() => {
-        const response = await axios.get(requests.news)
+        const response = await axios.get(requests.politics)
         console.log(response.data.articles)
         setData(response.data.articles)
     }
@@ -35,4 +32,4 @@ const News = () => {
   )
 }
 
-export default News
+export default Technology

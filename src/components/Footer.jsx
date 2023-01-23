@@ -7,9 +7,9 @@ const Footer = () => {
         <hr className='w-full text-slate-600 h-[0.1px] font-thin' />
     <div className='w-[85%] mx-auto pt-[2.3rem] pb-2 '>
         <div className='w-[60%]'>
-         <h1 className='text-5xl mb-4'>Subscribe to our <span className='text-[#fc444a]'>Newsletter</span> for <span className='text-[#fc444a]'>daily updates!</span> </h1>
-         <input className='bg-black border-b mr-2 border-b-white outline-none text-4xl text-gray-400 my-4 w-[140%] sm:w-[50%]' type="email" placeholder='Email' /><br></br>
-         <button className='my-3 uppercase text-2xl font-light border p-1 hover:text-[#fc444a] hover:border-[#fc444a]'>Subscribe</button>
+         <h1 className='text-3xl mb-4'>Subscribe to our <span className='text-[#fc444a]'>Newsletter</span> for <span className='text-[#fc444a]'>daily updates!</span> </h1>
+         <input className='bg-black border-b mr-2 border-b-white outline-none text-2xl text-gray-400 my-4 w-[140%] sm:w-[50%]' type="email" placeholder='Email' /><br></br>
+         <button type='submit' className='my-3 uppercase text-xl font-light border p-1 hover:text-[#fc444a] hover:border-[#fc444a]'>Subscribe</button>
         </div>
 
         

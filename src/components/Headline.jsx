@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import key from '../requests'
+import requests from '../requests'
 import NewsCardSm from './NewsCardSm'
 
 const Headline = () => {
@@ -9,7 +9,7 @@ const Headline = () => {
   
     useEffect(() => {
     const getLatest = async() => {
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?language=en&apiKey=${key}&from=${new Date()}`)
+        const response = await axios.get(`${requests.headline}&from=${new Date()}`)
         console.log(response.data.articles)
         setData(response.data.articles)
     }
@@ -25,6 +25,7 @@ const Headline = () => {
                 url = {item.url}
                 title={item.title}
                 urlToImage={item.urlToImage}
+                author = {item.author}
             />
         ))}
        </div> 
